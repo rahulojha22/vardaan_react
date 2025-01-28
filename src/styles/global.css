@@ -1,0 +1,739 @@
+.navbar_box{
+    top: 0px;
+    position: sticky;
+    padding: 20px 0px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: end;
+    font-weight: 600;
+    z-index: 9;
+}
+.page_item{
+    padding: 0px 20px;
+}
+.page_link{
+    cursor: pointer;
+    color: #2d2d2d;
+    font-size: 18px;
+}
+.poster_img{
+    width: 100%;
+    aspect-ratio: 1/0.46;
+}
+.poster_sec{
+    width: 100%;
+    aspect-ratio: 1/0.46;
+}
+.video_style{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+.about_sec{
+    background-image: url("../../public/images/used/abouts_base.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 50px 0px 160px 0px;
+}
+.about_overlay{
+    padding: 0px 80px;
+    display: flex;
+    align-items: center;
+    background-image: url("../../public/images/colour-toy.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: auto;
+    opacity: 1;
+}
+.about_school{
+    width: 60%;
+    background-color: #ffffff4f;
+    box-shadow: 0px -25px 40px 0px rgba(1, 1, 1, 0.07);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 40px 40px 40px 40px;
+    border-radius: 8px 8px 8px 8px;
+    z-index: 2;
+}
+.about_desc{
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: 8; /* Limit to 8 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5; /* Adjust line spacing */
+    max-height: calc(1.5em * 12);
+    padding-bottom: 10px;
+}
+.img_box{
+    width: 40%;
+    margin-left: -30px;
+}
+.about_img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 30px;    
+}
+.about_heading{
+    color: #002880;
+    font-family: "Soleto";
+    font-size: 46px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-style: italic;
+    margin: 0px 0px 10px 0px;
+}
+.about_name{
+    color: #002880;
+    font-family: "Soleto";
+    font-size: 37px;
+    font-weight: 900;
+    font-style: normal;
+    margin: 0px 0px 20px 0px;
+}
+.info_sec{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 60px 80px 20px 80px;
+}
+.info_top_heading{
+    text-align: center;
+    color: #002880;
+    font-family: "Soleto";
+    font-size: 37px;
+    font-weight: 900;
+    font-style: normal;
+    margin: 0px 0px 20px 0px;
+}
+.info_card_box{
+    width: 25%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+}
+.info_card{
+    height: 100%;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #54BDE6;
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 0px 5px 24px 0px rgba(1.0000000000000198, 151.00000000000017, 210, 0.2);
+}
+.info_card_body{
+    height: 100%;
+    align-content: center;
+}
+.info_heading{
+    padding-top: 30px;
+    color: #006AD9;
+    font-family: "Soleto";
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0px 0px 20px 0px;    
+}
+.info_desc{
+    color: #2d2d2d;
+    font-family: "HELVETICASCHOOL";
+    font-size: 20px;
+}
+.info_logo_box{
+    padding: 10px;
+    position: absolute;
+    right: 50px;
+    top: -40px;
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #54BDE6;
+    border-radius: 50%;
+    box-shadow: 0px 5px 24px 0px rgba(1.0000000000000198, 151.00000000000017, 210, 0.2);
+    background-color: #FFFFFFE6;
+    display: flex;
+    justify-content: center;
+}
+.info_logo{
+    width: 100%;
+}
+.awards_sec{
+    background-image: url("../../public/images/awards-bg.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;    
+}
+.awards_box{
+    text-align: center;
+    background-color: #ffffffc2;
+    padding: 20px 80px 100px 80px;
+}
+.awards_heading{
+    color: #002880;
+    font-family: "Soleto";
+    font-size: 50px;
+    font-weight: 900;
+    font-style: normal;
+}
+.award_body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 26px;
+    width: 100%;
+    /* overflow-x: scroll;
+    scrollbar-width: none; */
+}
+.award_item{
+    /* min-width: 33.33%; */
+    width: 33.33%;
+}
+.award_card{
+    height: 100%;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #e8b53380;
+    border-radius: 16px 16px 16px 16px;
+    background-color: #FFFFFF;
+}
+.award_card_box{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+}
+.award_card_body{
+    height: 100%;
+}
+.award_heading{
+    padding-top: 16px;
+    color: #2d2d2d;
+    font-family: "HELVETICASCHOOL";
+    font-size: 24px;
+    font-weight: 800;
+}
+.award_desc{
+    color: #2d2d2d;
+    font-family: "HELVETICASCHOOL";
+    font-size: 24px;
+    text-align: justify;
+}
+.award_logo_box{
+    position: absolute;
+    right: 37%;
+    top: -40px;
+    width: 26%;
+    aspect-ratio: 1/1;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #e8b53380;
+    border-radius: 50%;
+    background-color: #FFFFFFE6;
+}
+.scroll_btn_sec{
+    display: flex;
+    justify-content: center;
+}
+.scroll_btn {
+    background-color: #e8b533;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.scroll_btn:hover {
+  background-color: #d4a623;
+}
+
+.scroll_btn:active {
+  transform: scale(0.95); /* Adds a click effect */
+}
+
+.left {
+  margin-right: auto;
+}
+
+.right {
+  margin-left: auto;
+}
+.facilities_sec{
+    margin-top: -120px;
+    padding: 500px 0px;
+    background-image: url("../../public/images/used/vardaan_campus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.facilities_heading_sec{
+    padding-top: 62px;
+    color: #ffffff;
+    font-family: "Soleto";
+    text-align: center;
+}
+.facilities_heading{
+    font-size: 52px;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0px;
+}
+.facilities_sub_heading{
+    font-size: 66px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: normal;
+    margin: 0px;
+}
+.facilities_bottom{
+    padding: 0px 80px;
+}
+.facilities_bottom_box{
+    margin-top: -260px;
+}
+.facilities_body{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 20px 20px 12px 20px;
+    border-radius: 16px 16px 0px 0px;
+    box-shadow: 0.611px -35px 24px 6.3px rgba(174.99999999999994, 175, 65, 0.41);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+.facilities_card_box{
+    width: calc(100%/7);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.facilities_img{
+    border: 2px solid #1877F2;
+    border-radius: 8px;
+    text-align: center;
+    width: 70%;
+    aspect-ratio: 2/1.4;
+}
+.facility_img{
+    border-radius: 8px;
+    width: 100%;
+    aspect-ratio: 2/1.4;
+}
+.facilities_name{
+    padding-top: 6px;
+    font-family: "HELVETICASCHOOL";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+.facilities_description{
+    padding: 40px 120px;
+    text-align: center;
+    color: #2d2d2d;
+    font-family: "Helvetica Neue";
+    font-size: 36px;
+    font-weight: 200;
+    font-style: oblique;
+    line-height: 1.2em;
+}
+.footer_sec{
+    background-image: url('../../public/images/used/bus_pic.JPG');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer_box{
+    padding: 0px 80px;
+    background-color: #006ad9e3;
+    display: flex;
+}
+.footer_left{
+    box-shadow: 10px 0px 5px 0px rgba(1, 1, 1, 0.15);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 80px 20px 80px 20px;
+    background-color: #FFFFFF;
+    width: 30%;
+}
+.footer_item{
+    font-family: "HELVETICASCHOOL";
+    font-size: 18px;
+}
+.item_name{
+    font-weight: 700;
+}
+.item_description{
+    font-weight: 400;
+}
+.footer_right{
+    padding: 40px 20px 40px 40px;
+    width: 70%;
+    color: #FFFFFF;
+}
+.list_upper_sec{
+    background-image: url('../../public/images/used/list_bg.JPG');
+    background-position: top center;
+    background-repeat: no-repeat;    
+    background-size: contain;
+}
+.list_upper_body{
+    padding: 300px;
+    background-image: url('https://presidencyschools.org/wp-content/uploads/2022/11/Pan-Bangalore-Presence-top-mask-V2.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+.list_lower_body{
+    background-image: url('https://presidencyschools.org/wp-content/uploads/2022/11/pattern-001.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    padding-bottom: 200px;
+}
+.list_bottom_sec{
+    background-image: url('https://presidencyschools.org/wp-content/uploads/2022/11/Pan-Bangalore-Presence-02.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.list_lower_box{
+    padding: 60px 80px 0px 80px;
+    text-align: center;
+}
+.list_heading{
+    margin: 20px;
+    color: #FFFFFF;
+    font-family: "Soleto";
+    font-size: 35px;
+    font-weight: 200;
+    font-style: italic;
+    text-shadow: 4.33px 5px 2.5px rgba(1, 1, 1, 0.25)
+}
+.list_description{
+    margin: 0px;
+    color: #FFFFFF;
+    font-family: "Soleto";
+    font-size: 40px;
+    text-shadow: 4.33px 5px 2.5px rgba(1, 1, 1, 0.25)
+}
+.list_box{
+    color: #2d2d2d;
+    font-family: "HELVETICASCHOOL";
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.7em;
+    margin: 40px 10px 0px 10px;
+    padding: 20px 40px 10px 40px;
+    background-color: #FFFFFF59;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #FFFFFF;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0px 7px 49px 0px rgba(255, 240, 0, 0.6);
+}
+.list_cards{
+    padding: 120px 40px 0px;
+    display: flex;
+    justify-content: center;
+}
+.list_item{
+    width: 35%;
+    padding: 20px;
+}
+.list_card{
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 12px 15px 0px rgba(1, 1, 1, 0.7);
+}
+.list_img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.list_card_body{
+    text-align: left;
+    padding: 30px 20px 0px 20px;
+}
+.list_card_heading{
+    margin: 0px;
+    color: #002880;
+    font-family: "HELVETICASCHOOL";
+    font-size: 22px;
+    font-weight: 600;
+}
+.list_card_desc{
+    padding: 20px 0px 0px;
+    margin: 0px;
+    color: #2d2d2d;
+    font-family: "HELVETICASCHOOL";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+.list_card_footer{
+    text-align: left;
+    padding-inline: 20px;
+}
+.list_card_contact{
+    padding: 10px 0px;
+    margin: 0px;
+    color: #2d2d2d;
+    font-family: "HELVETICASCHOOL";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+.pedagogy_sec{
+    padding: 150px 80px 100px;
+    margin-top: -140px;
+    background-image: url('../../public/images/used/pedagogy_bg.JPG');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pedagogy_heading{
+    padding: 10px 0px;
+    text-align: center;
+    margin: 0px;
+    color: #002880;
+    font-family: "Soleto";
+    font-size: 46px;
+    font-weight: 900;
+}
+.pedagogy_cards{
+    width: 100%;
+    padding: 80px 40px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.pedagogy_card{
+    width: 32%;
+    background-color: #FFFFFF;
+    border-radius: 10px;    
+}
+.pedagogy_img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.pedagogy_card_body{
+    text-align: left;
+    padding: 40px 20px 10px 20px;
+}
+.pedagogy_card_heading{
+    margin: 0px;
+    color: #002880;
+    font-family: "HELVETICASCHOOL";
+    font-size: 22px;
+    font-weight: 600;
+}
+.pedagogy_card_desc{
+    padding: 20px 0px;
+    margin: 0px;
+    color: #2d2d2d;
+    font-family: "HELVETICASCHOOL";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+.clopyright_sec{
+    padding: 10px 0px;
+    text-align: center;
+    background-color: #002880;
+    color: #959292;
+    font-weight: 600;
+}
+.school_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.school_item{
+    width: 50%;
+    padding: 10px 0px;
+}
+.school_list_heading{
+    font-size: 20px;
+}
+.social_sec{
+    padding: 10px 0px;
+    font-size: 20px;
+}
+.testimonial_item{
+    display: flex;
+    width: 50%;
+    padding: 20px 10px;
+}
+.testimonial_img{
+    width: 35%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 10px solid red;
+    margin-right: -63px;
+    z-index: 2;
+}
+.feedback_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.feedback_details{
+    width: 90%;
+    padding: 20px 20px 20px 0px;
+    align-content: center;    
+}
+.feedback_box{
+    padding-left: 20px;
+    border: 3px solid red;
+    border-radius: 10px;
+}
+.feedback_detail{
+    padding: 20px 20px 20px 45px;
+}
+.feedback_names{
+    display: flex;
+    align-items: flex-end;
+}
+.angled-rectangle {
+    margin-right: -22px;
+    padding: 0px 0px 0px 40px;
+    width: 40%;
+    height: 30px;
+    background-color: red;
+    transform: skewX(-30deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 15px 0px 0px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+}
+.rounded-rectangle{
+    padding: 0px 0px 0px 40px;
+    width: 65%;
+    height: 40px;
+    background-color: blue;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 30px 0px 10px 0px;
+}
+.admission_btn{
+    position: fixed;
+    top: 50%;
+    z-index: 2;
+    rotate: -90deg;
+    right: -52px;
+    border-radius: 10px 10px 0px 0px!important;
+}
+.yt_btn{
+    background-color: #FF0000!important;
+    border: 0px!important;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    cursor: pointer;
+    top: 40%;
+    z-index: 2;
+    rotate: 0deg;
+    left: 0px;
+    border-radius: 0px 10px 10px 0px!important;
+    transition: width 1s!important;
+}
+.wtsap_btn{
+    background-color: #25D366!important;
+    border: 0px!important;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    cursor: pointer;
+    top: calc(40% + 40px);
+    z-index: 2;
+    rotate: 0deg;
+    left: 0px;
+    border-radius: 0px 10px 10px 0px!important;
+    transition: width 1s!important;
+}
+.fb_btn{
+    background-color: #1877F2!important;
+    border: 0px!important;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    cursor: pointer;
+    top: calc(40% + 120px);
+    z-index: 2;
+    rotate: 0deg;
+    left: 0px;
+    border-radius: 0px 10px 10px 0px!important;
+    transition: width 1s!important;
+}
+.insta_btn{
+    background-color: transparent!important;
+    border: 0px!important;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    cursor: pointer;
+    top: calc(40% + 80px);
+    z-index: 2;
+    rotate: 0deg;
+    left: 0px;
+    border-radius: 0px 10px 10px 0px!important;
+    transition: width 1s!important;
+}
+/* .yt_btn:hover{
+    width: 120px;
+} */
+.yt_icon{
+    width: 40px;
+}
+.icon_text{
+    color: #ffffff;
+    font-weight: 600;
+    display: none;
+}
+.icon_text:hover{
+    display: block;
+}
+.mission_img{
+    width: 100%;
+    height: 700px;
+}
+.social_icons{
+    display: flex;
+    padding-top: 10px;
+}
+.ft_wtsap_btn{
+    width: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.ft_fb_btn{
+    width: 40px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.ft_insta_btn{
+    width: 40px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.ft_yt_btn{
+    width: 40px;
+    cursor: pointer;
+}
+.ft_add{
+    cursor: pointer;
+}
+.subpages_heading{
+    padding: 40px 100px;
+    color: #2d2d2d;
+    font-size: 40px;
+    font-weight: 800;
+}
+.subpages_body{
+    padding: 40px 80px;
+}
