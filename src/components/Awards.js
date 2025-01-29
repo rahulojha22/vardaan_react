@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
+import Carousel from 'react-bootstrap/Carousel';
 
 const Awards = () => {
   const [awards, setAwards] = useState([]);
+  const [results, setResults] = useState([]);
 
   useEffect(() => {
     const awardsList = [
@@ -13,7 +15,9 @@ const Awards = () => {
       {heading: 'Create Toppers', description: 'Toppers across Science, Arts, and Commerce streams, setting benchmarks for academic excellence.'},
       {heading: 'State-Level Selections', description: 'Over 100 students represented the school in state-level competitions across major sports, including cricket, basketball, athletics, and shooting.'}
     ]
-    setAwards(awardsList);    
+    setAwards(awardsList);   
+    const resultList = ['result1.jpg', '12_class_results1.jpg', '12_class_results2.jpg', '12_class_results3.jpg']
+    setResults(resultList);   
   }, []);
 
   function scrollAwards(direction) {
@@ -50,14 +54,24 @@ const Awards = () => {
                     </div>
           })}          
         </div>
-        {/* <div className='scroll_btn_sec'>
-          <button className="scroll_btn left" onClick={() => scrollAwards("left")}>
-            &#8249;
-          </button>
-          <button className="scroll_btn right" onClick={() => scrollAwards("right")}>
-            &#8250;
-          </button>
-        </div>         */}
+      </div>
+      <div className='result_section'>
+        Our Results
+      </div>
+      <div className='crousel_box'>
+        <div className='crousel_body'>
+           <Carousel data-bs-theme="dark" interval={3000} controls={true}>       
+             {results.length && results.map(val=>{
+               return <Carousel.Item>
+                         <img
+                           className="d-block w-100 poster_img"
+                           src={`/images/results/${val}`}
+                           alt="First slide"
+                         />
+                      </Carousel.Item>
+             })}
+          </Carousel>
+        </div>
       </div>
     </div>
   )

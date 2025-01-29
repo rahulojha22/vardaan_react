@@ -49,19 +49,19 @@ const Footer = () => {
                 Follow us on Social:
                 <div className='social_icons'>
                   <div className='ft_wtsap_btn' onClick={()=>handleClick("")}>
-                    <img src='/images/icons/whatsapp.png' className='yt_icon' />
+                    <img src='/images/icons/whatsapp.png' className='yt_icon' alt='whatsapp' />
                     <span className='icon_text'>Whatsapp</span>
                   </div>
                   <div className='ft_fb_btn' onClick={()=>handleClick("")}>
-                    <img src='/images/icons/facebook.png' className='yt_icon' />
+                    <img src='/images/icons/facebook.png' className='yt_icon' alt='facebook' />
                     <span className='icon_text'>Facebook</span>
                   </div>
                   <div className='ft_insta_btn' onClick={()=>handleClick("https://www.instagram.com/vardaan_group_of_schools?utm_source=qr")}>
-                    <img src='/images/icons/instagram.png' className='yt_icon' />
+                    <img src='/images/icons/instagram.png' className='yt_icon' alt='instagram' />
                     <span className='icon_text'>Instagram</span>
                   </div>
                   <div className='ft_yt_btn' onClick={()=>handleClick("https://www.youtube.com/@vardaanschooldungarpur4830")}>
-                    <img src='/images/icons/youtube.png' className='yt_icon' />
+                    <img src='/images/icons/youtube.png' className='yt_icon' alt='youtube' />
                     <span className='icon_text'>Youtube</span>
                   </div>
                 </div>

@@ -1,12 +1,18 @@
 .navbar_box{
     top: 0px;
-    position: sticky;
+    width: 100%;
+    position: fixed;
     padding: 20px 0px;
-    background-color: #ffffff;
     display: flex;
     justify-content: end;
     font-weight: 600;
     z-index: 9;
+}
+.navbar_bg1{
+    background-color: #ffffff52;
+}
+.navbar_bg2{
+    background-color: #ffffff;
 }
 .page_item{
     padding: 0px 20px;
@@ -15,10 +21,6 @@
     cursor: pointer;
     color: #2d2d2d;
     font-size: 18px;
-}
-.poster_img{
-    width: 100%;
-    aspect-ratio: 1/0.46;
 }
 .poster_sec{
     width: 100%;
@@ -169,7 +171,7 @@
 .awards_box{
     text-align: center;
     background-color: #ffffffc2;
-    padding: 20px 80px 100px 80px;
+    padding: 20px 80px 32px 80px;
 }
 .awards_heading{
     color: #002880;
@@ -729,11 +731,39 @@
     cursor: pointer;
 }
 .subpages_heading{
-    padding: 40px 100px;
+    padding: 180px 100px 100px;
     color: #2d2d2d;
     font-size: 40px;
     font-weight: 800;
+    background-color: #006AD9;
 }
 .subpages_body{
     padding: 40px 80px;
+}
+.result_img{
+    padding: 10px;
+}
+.result_body{
+    display: flex;
+    flex-wrap: wrap;
+}
+.result_section{
+    padding: 20px 0px 30px;
+    text-align: center;
+    color: #002880;
+    font-family: "Soleto";
+    font-size: 50px;
+    font-weight: 900;
+    font-style: normal;
+}
+.crousel_box{
+    display: flex;
+    justify-content: center;
+}
+.crousel_body{
+    width: 80%;
+}
+.poster_img{
+    width: 100%;
+    aspect-ratio: 1/0.2;
 }

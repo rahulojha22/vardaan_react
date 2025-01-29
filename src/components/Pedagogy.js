@@ -19,7 +19,7 @@ const Pedagogy = () => {
       <div className='pedagogy_cards'>
         {pedagogy.length && pedagogy.map((val, i)=>{
           return <div key={`pedagogy_card${i}`} className='pedagogy_card'>
-                    <img className='pedagogy_img' src={`/images/used/${val.image}`} />
+                    <img className='pedagogy_img' src={`/images/used/${val.image}`} alt='pedagogy' />
                     <div className='pedagogy_card_body'>
                       <p className='pedagogy_card_heading'>{val.heading}</p>
                       <p className='pedagogy_card_desc'>{val.description}</p>

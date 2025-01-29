@@ -31,7 +31,7 @@ const Facilities = () => {
                 {facilities && facilities.map((val, i)=>{
                   return <div key={`facilities_card${i}`} className='facilities_card_box'>
                     <div className='facilities_img'>
-                      <img src={`/images/used/${val.image}`} className='facility_img' />
+                      <img src={`/images/used/${val.image}`} className='facility_img' alt='facility' />
                     </div>
                     <span className='facilities_name'>{val.name}</span>
                   </div>

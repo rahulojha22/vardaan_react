@@ -32,7 +32,7 @@ const List = () => {
                 {list.length && list.map((val, i)=>{
                   return <div key={`list-${i}`} className='list_item'>
                           <div className='list_card'>
-                            <img className='list_img' src='https://presidencyschools.org/wp-content/uploads/2022/11/PSNLO-Feature-Image.webp' />
+                            <img className='list_img' src={`/images/used/${val.image}`} alt='name' />
                             <div className='list_card_body'>
                               <p className='list_card_heading'>{val.name}</p>
                               <p className='list_card_desc'>{val.address}</p>                              

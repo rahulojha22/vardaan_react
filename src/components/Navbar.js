@@ -3,6 +3,21 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [pages, setPages] = useState([]);
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
     
   useEffect(() => {
     const pagesList = [
@@ -16,7 +31,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className='navbar_box'>      
+    <div className={`navbar_box ${scrolled ? "navbar_bg2" : "navbar_bg1"}`}>      
       <div>        
       </div>
       {pages.length && pages.map((val, i)=>{
