@@ -14,7 +14,7 @@ const Results = () => {
       <div className='subpages_body'>
         <div className='result_body'>
           {results.length && results.map((val, i)=>{
-            return <div className='result_img' style={{ width: (i===1||i===2)?'50%':'100%' }}>
+            return <div className={`result_img ${(i===1||i===2)?'rslt_img1':'rslt_img2'}`}>
                       <img src={`/images/results/${val}`} alt='result' width={'100%'} />
                    </div>
           })}

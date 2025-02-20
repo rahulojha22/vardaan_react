@@ -39,11 +39,11 @@ const Home = () => {
                 <Form.Control type="text" placeholder="Student Name" />
               </Form.Group>
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                <Form.Label>Parent Name *</Form.Label>
+                <Form.Label>Parent Name</Form.Label>
                 <Form.Control type="text" placeholder="Parent Name" />
               </Form.Group>
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                <Form.Label>Email *</Form.Label>
+                <Form.Label>Email</Form.Label>
                 <Form.Control type="email" placeholder="Email" />
               </Form.Group>
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -51,7 +51,7 @@ const Home = () => {
                 <Form.Control type="number" placeholder="Phone Number" />
               </Form.Group>
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                <Form.Label>Grade *</Form.Label>
+                <Form.Label>Grade</Form.Label>
                 <Form.Select aria-label="Default select example">
                   <option value="12">Grade 12(Science)</option>
                   <option value="12">Grade 12(Commerce)</option>
@@ -87,8 +87,7 @@ const Home = () => {
             </Button>
           </Modal.Footer>
         </Modal>
-
-        {/* <Navbar />         */}
+        
         <Poster />
         <About />
         <Info />

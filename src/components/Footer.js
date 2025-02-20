@@ -20,14 +20,17 @@ const Footer = () => {
       <div className='footer_sec'>
         <div className='footer_box'>
           <div className='footer_left'>
-            <div className='footer_item'>
-              <p className='item_name'>Address</p>
-              <p className='item_description'>Dungarpur Rajasthan-314001, India</p>
-            </div>
-            <div className='footer_item'>
-              <p className='item_name'>Phone</p>
-              <p className='item_description'>Tel: 9887281347</p>
-            </div>            
+            <img src='/images/used/vardaan_logo1.PNG' alt='logo' className='vardaan_f_logo' />
+            <div>
+              <div className='footer_item'>
+                <p className='item_name'>Address</p>
+                <p className='item_description'>Dungarpur Rajasthan-314001, India</p>
+              </div>
+              <div className='footer_item'>
+                <p className='item_name'>Phone</p>
+                <p className='item_description'>Tel: 9887281347</p>
+              </div>
+            </div>                        
           </div>
           <div className='footer_right'>
             <div>

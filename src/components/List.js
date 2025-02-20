@@ -40,8 +40,20 @@ const List = () => {
                             <div className='list_card_footer'>
                               <p className='list_card_contact'>Contact: {val.mo_no}</p>
                             </div>
+                          </div>  
+                          <div className='list_card1'>
+                            <img className='list_img' src={`/images/used/${val.image}`} alt='name' />
+                            <div>
+                              <div className='list_card_body'>
+                                <p className='list_card_heading'>{val.name}</p>
+                                <p className='list_card_desc'>{val.address}</p>                              
+                              </div>
+                              <div className='list_card_footer'>
+                                <p className='list_card_contact'>Contact: {val.mo_no}</p>
+                              </div>
+                            </div>                            
                           </div>                            
-                          </div>
+                        </div>
                 })}
               </div>
             </div>
