@@ -22,17 +22,6 @@ const Awards = () => {
     setResults(resultList);   
   }, []);
 
-  function scrollAwards(direction) {
-    const container = document.getElementById("awardBody");
-    const scrollAmount = 300; // Adjust this for how much to scroll per click
-  
-    if (direction === "left") {
-      container.scrollLeft -= scrollAmount; // Scroll left
-    } else if (direction === "right") {
-      container.scrollLeft += scrollAmount; // Scroll right
-    }
-  }
-
   return (
     <div className='awards_sec'>
       <div className='awards_box'>

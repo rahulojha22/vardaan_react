@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 
 const About = () => {
   const [management, setManagement] = useState([]);
@@ -36,7 +35,7 @@ const About = () => {
           if(i%2===0){
             return <div key={`mgt_card${i}`} className='mgt_item1'>
                       <div className='mgt_img_box'>
-                        <img src={`/images/used/${val.image}`} alt='image' className='mgt_img' />
+                        <img src={`/images/used/${val.image}`} alt='mgt_image' className='mgt_img' />
                       </div>
                       <div className='mgt_box'>
                         <p className='mgt_heading'>{val.name} - {val.designation}</p>
@@ -50,7 +49,7 @@ const About = () => {
                       <p className='mgt_desc'>{val.description}</p>
                     </div>
                     <div className='mgt_img_box'>
-                      <img src={`/images/used/${val.image}`} alt='image' className='mgt_img' />
+                      <img src={`/images/used/${val.image}`} alt='mgt_image' className='mgt_img' />
                     </div>
                 </div>
           }
