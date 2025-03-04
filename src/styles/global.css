@@ -199,10 +199,10 @@
     width: 100%;
 }
 .awards_sec{
-    background-image: url("../../public/images/awards-bg.png");
+    /* background-image: url("../../public/images/awards-bg.png");
     background-position: bottom center;
     background-repeat: no-repeat;
-    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;    
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;     */
 }
 .awards_box{
     text-align: center;
@@ -486,6 +486,12 @@
     font-weight: 400;
     line-height: 1.5em;
 }
+.testimonial_img{
+    display: block;
+}
+.testimonial_img_mob{
+    display: none;
+}
 .pedagogy_sec{
     padding: 150px 80px 100px;
     margin-top: -140px;
@@ -539,6 +545,9 @@
     font-weight: 400;
     line-height: 1.5em;
     text-align: justify;
+}
+.news_img{
+    width: 20%;
 }
 .footer_sec{
     background-image: url('../../public/images/used/bus_pic.JPG');
@@ -610,6 +619,16 @@
     font-weight: 600;
     background-color: #5f5f5f;
 }
+.subpages_heading1{
+    font-size: 36px;
+}
+.sub_heading_img{
+    width: 100%;
+}
+.sub_heading_img_mob{
+    display: none;
+    width: 100%;
+}
 .subpages_body{
     padding: 40px 80px;
     text-align: justify;
@@ -629,7 +648,7 @@
     padding-bottom: 40px;
 }
 .mgt_sec{
-    padding: 0px 80px;
+    padding: 0px 80px 40px;
 }
 .mgt_top_heading{
     font-size: 28px;
@@ -675,7 +694,6 @@
     width: 33.33%;
     padding: 20px 10px;
     cursor: pointer;
-
     transition: transform 0.3s ease-in-out;
 }
 .event_card:hover {
@@ -918,7 +936,7 @@
         padding: 40px 80px;
     }
     .mgt_sec{
-        padding: 0px 80px;
+        padding: 0px 80px 40px;
     }
     .mgt_img_box{
         width: 25%;
@@ -955,10 +973,10 @@
     }
     .abt_img_box1{
         display: block;
-        margin-top: -26px;
+        margin-top: -20px;
     }
     .about_img{
-        aspect-ratio: 1/0.58;
+        aspect-ratio: 1/1;
     }
     .about_school{
         width: 100%;
@@ -1121,6 +1139,9 @@
     .mgt_sec{
         padding: 40px 40px;
     }
+    .event_card{
+        width: 50%;
+    }
 }
 @media screen and (max-width: 600px) {
     .nav_logo{
@@ -1135,6 +1156,12 @@
         align-items: center;
         justify-content: end;
         padding-right: 28px;
+    }
+    .poster_sec{
+        aspect-ratio: 1/0.8;
+    }
+    .about_sec{
+        background-image: url("../../public/images/used/abouts_base.png");
     }
     .about_overlay{
         padding: 0px 28px;
@@ -1164,6 +1191,9 @@
     .info_desc{
         font-size: 20px;
     }
+    .awards_sec{
+        padding-bottom: 100px;
+    }
     .awards_box{
         padding: 20px 28px 32px 28px;
     }
@@ -1178,6 +1208,13 @@
     .crousel_body{
         width: 100%;
     }
+    .facilities_sec{
+        /* padding: 416px 0px; */
+        background-image: url("../../public/images/used/vardaan_campus.png");
+    }
+    .facilities_bottom_box{
+        margin-top: -40px;
+    }
     .facilities_bottom{
         padding: 0px 28px;
     }
@@ -1186,6 +1223,7 @@
     }
     .facilities_heading{
         font-size: 30px;
+        color: #002880;
     }
     .facilities_description{
         padding: 16px 32px;
@@ -1216,6 +1254,12 @@
     .list_img{
         width: 100%;
         border-radius: 10px 10px 0px 0px;
+    }
+    .testimonial_img{
+        display: none;
+    }
+    .testimonial_img_mob{
+        display: block;
     }
     .pedagogy_sec {
         padding: 150px 28px 48px;
@@ -1300,8 +1344,26 @@
     .rslt_img1{
         width: 100%;
     }
+    .event_card{
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .event_name{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .sub_heading_img{
+        display: none;
+    }
+    .sub_heading_img_mob{
+        display: block;
+        width: 100%;
+    }
 }
 @media screen and (max-width: 480px) {
+    .about_sec{
+        padding: 50px 0px 100px 0px;
+    }
     .facilities_sec{
         padding: 416px 0px;
     }
@@ -1373,22 +1435,8 @@
 .left {
   margin-right: auto;
 }
-
 .right {
   margin-left: auto;
-}
-.testimonial_item{
-    display: flex;
-    width: 50%;
-    padding: 20px 10px;
-}
-.testimonial_img{
-    width: 35%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    border: 10px solid red;
-    margin-right: -63px;
-    z-index: 2;
 }
 .feedback_img{
     width: 100%;

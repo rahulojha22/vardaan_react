@@ -101,11 +101,11 @@ const Home = () => {
           <Button as="a" variant="primary" className='admission_btn' onClick={handleShow}>
             Admission Open
           </Button>
-          <div className='wtsap_btn' onClick={()=>handleClick("")}>
+          <div className='wtsap_btn' onClick={()=>handleClick("https://wa.me/919799145119")}>
             <img src='/images/icons/whatsapp.png' className='yt_icon' alt='whatsapp' />
             <span className='icon_text'>Whatsapp</span>
           </div>
-          <div className='fb_btn' onClick={()=>handleClick("")}>
+          <div className='fb_btn' onClick={()=>handleClick("https://www.facebook.com/share/15ABdtTfRR/")}>
             <img src='/images/icons/facebook.png' className='yt_icon' alt='facebook' />
             <span className='icon_text'>Facebook</span>
           </div>

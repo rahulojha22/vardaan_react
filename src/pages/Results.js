@@ -10,7 +10,10 @@ const Results = () => {
 
   return (
     <div>
-      <div className='subpages_heading'>Our Results</div>
+      <div className='subpages_heading1'>
+        <img className='sub_heading_img' src='/images/used/result_heading.png' alt='about' />
+        <img className='sub_heading_img_mob' src='/images/used/result_heading_mob.png' alt='about' />
+      </div>
       <div className='subpages_body'>
         <div className='result_body'>
           {results.length && results.map((val, i)=>{

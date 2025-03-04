@@ -8,7 +8,7 @@ const Info = () => {
       {heading: '25+ Years', description: 'A legacy of enriching young minds and shaping bright futures.', icon: 'experience.png'},
       {heading: 'Highly Qualified Faculty', description: 'Over 1,000 faculty members dedicated to student success.', icon: 'faculty.png'},
       {heading: 'Recognized Excellence', description: 'Proud recipients of the "Most Promising Institute in South Rajasthan" award.', icon: 'recognized.png'},
-      {heading: 'Comprehensive Network', description: '10 schools and 2 colleges, fostering education across regions.', icon: 'network.png'}
+      {heading: 'Comprehensive Network', description: 'A vast network of schools fostering excellence in education across multiple regions.', icon: 'network.png'}
     ]
     setInfo(schoolInfo);    
   }, []);

@@ -22,7 +22,8 @@ const About = () => {
         </div>        
       </div>
       <div className='abt_img_box1'>
-            <img className='about_img' src='/images/used/about1.JPEG' alt='about' />
+          <img className='about_img' src='/images/used/about.JPG' alt='about' />
+          {/* <img className='about_img' src='/images/used/about1.JPEG' alt='about' /> */}
       </div>
     </>
   )
