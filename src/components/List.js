@@ -5,8 +5,8 @@ const List = () => {
     
   useEffect(() => {
     const list = [
-      {name: 'Vardaan Sr Sec School', address: 'Ratanpur Road, Navadera', mo_no: '9799145119', image: 'vardaan_sr.JPG'},
-      {name: 'Vardaan Kids School', address: 'Sindhi Colony, New Colony', mo_no: '7062600101', image: 'vardaan_kids.JPG'},
+      {name: 'Vardaan Sr Sec School', address: 'Ratanpur Road, Navadera', mo_no: '9799145119', image: 'vardaan_sr.jpg'},
+      {name: 'Vardaan Kids School', address: 'Sindhi Colony, New Colony', mo_no: '7062600101', image: 'vardaan_kids.jpg'},
       // {name: 'Navankur Academy', address: 'Ramdev Chowk, Shivaji Nagar, Housing Board', mo_no: '9509687045', image: 'hat.png'},
       // {name: 'Adarsh Vidhya Mandir Sr Sec School', address: 'Green Park Colony, Sadar Thana', mo_no: '9119103083', image: 'hat.png'}
     ]
@@ -32,7 +32,7 @@ const List = () => {
                 {list.length && list.map((val, i)=>{
                   return <div key={`list-${i}`} className='list_item'>
                           <div className='list_card'>
-                            <img className='list_img' src={`/images/used/${val.image}`} alt='name' />
+                            <img className='list_img' src={`https://images.vardaanschool.org/used/${val.image}`} alt='name' loading='lazy' />
                             <div className='list_card_body'>
                               <p className='list_card_heading'>{val.name}</p>
                               <p className='list_card_desc'>{val.address}</p>                              
@@ -42,7 +42,7 @@ const List = () => {
                             </div>
                           </div>  
                           <div className='list_card1'>
-                            <img className='list_img' src={`/images/used/${val.image}`} alt='name' />
+                            <img className='list_img' src={`https://images.vardaanschool.org/used/${val.image}`} alt='name' loading='lazy' />
                             <div>
                               <div className='list_card_body'>
                                 <p className='list_card_heading'>{val.name}</p>

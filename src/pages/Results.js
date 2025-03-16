@@ -11,14 +11,14 @@ const Results = () => {
   return (
     <div>
       <div className='subpages_heading1'>
-        <img className='sub_heading_img' src='/images/used/result_heading.png' alt='about' />
-        <img className='sub_heading_img_mob' src='/images/used/result_heading_mob.png' alt='about' />
+        <img className='sub_heading_img' src='https://images.vardaanschool.org/used/result_heading.png' alt='about' loading='lazy' />
+        <img className='sub_heading_img_mob' src='https://images.vardaanschool.org/used/result_heading_mob.png' alt='about' loading='lazy' />
       </div>
       <div className='subpages_body'>
         <div className='result_body'>
           {results.length && results.map((val, i)=>{
-            return <div className={`result_img ${(i===1||i===2)?'rslt_img1':'rslt_img2'}`}>
-                      <img src={`/images/results/${val}`} alt='result' width={'100%'} />
+            return <div key={`results_${i}`} className={`result_img ${(i===1||i===2)?'rslt_img1':'rslt_img2'}`}>
+                      <img src={`https://images.vardaanschool.org/results/${val}`} alt='result' width={'100%'} loading='lazy' />
                    </div>
           })}
         </div>

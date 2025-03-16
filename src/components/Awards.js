@@ -18,7 +18,7 @@ const Awards = () => {
       {heading: 'SOF Olympiad Excellence', type: 'text', description: 'Students achieved 1st, 2nd, and 3rd International Ranks in the prestigious SOF Olympiad Exams, reflecting their global competitiveness.'}
     ]
     setAwards(awardsList);   
-    const resultList = ['result1.jpg', '12_class_results1.jpg', '12_class_results2.jpg', '12_class_results3.jpg']
+    const resultList = ['result1.jpg', 'result2.jpg', 'result3.jpg', 'result4.jpg']
     setResults(resultList);   
   }, []);
 
@@ -40,7 +40,7 @@ const Awards = () => {
                                 <p className='award_desc'>{val.description}</p>
                               </div>                              
                             ):(
-                                <img src={`/images/used/${val.img}`} alt='result' className='award_image' />
+                                <img src={`https://images.vardaanschool.org/used/${val.img}`} alt='result' className='award_image' loading='lazy' />
                             )}
                             {/* <p className='award_heading'>{val.heading}</p>
                             <p className='award_desc'>{val.description}</p> */}
@@ -64,8 +64,9 @@ const Awards = () => {
                return <Carousel.Item key={`crousel${i}`}>
                          <img
                            className="d-block w-100 poster_img"
-                           src={`/images/results/${val}`}
+                           src={`https://images.vardaanschool.org/results/${val}`}
                            alt="First slide"
+                           loading='lazy'
                          />
                       </Carousel.Item>
              })}

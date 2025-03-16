@@ -27,6 +27,11 @@
     align-items: center;
     padding: 20px 0px;
 }
+.nav_notification{
+    padding: 30px 20px;
+    font-size: 16px;
+    color: #ff000c;
+}
 .vardaan_n_logo{
     width: 70px;
 }
@@ -65,7 +70,7 @@
     object-position: center top;
 }
 .about_sec{
-    background-image: url("../../public/images/used/abouts_base.jpg");
+    background-image: url("https://images.vardaanschool.org/used/abouts_base.jpg");
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -76,7 +81,7 @@
     padding: 0px 80px;
     display: flex;
     align-items: center;
-    background-image: url("../../public/images/colour-toy.png");
+    background-image: url("https://images.vardaanschool.org/colour-toy.png");
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: auto;
@@ -101,6 +106,35 @@
     max-height: calc(1.5em * 12);
     padding-bottom: 10px;
 }
+.slider-container {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Start off-screen */
+    opacity: 0;
+    transition: transform 3s ease-in-out, opacity 1s ease-in-out;
+}
+
+.slide-image.active {
+    left: 0;
+    opacity: 1;
+}
 .abt_img_box{
     width: 40%;
     margin-left: -30px;
@@ -112,6 +146,10 @@
 .about_img{
     width: 100%;
     aspect-ratio: 1/1;
+}
+.slide-image{
+    width: 100%;
+    object-fit: cover;
 }
 .about_heading{
     color: #002880;
@@ -199,7 +237,7 @@
     width: 100%;
 }
 .awards_sec{
-    /* background-image: url("../../public/images/awards-bg.png");
+    /* background-image: url("https://images.vardaanschool.org/awards-bg.png");
     background-position: bottom center;
     background-repeat: no-repeat;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;     */
@@ -298,7 +336,7 @@
 .facilities_sec{
     margin-top: -120px;
     padding: 500px 0px;
-    background-image: url("../../public/images/used/vardaan_campus.jpg");
+    background-image: url("https://images.vardaanschool.org/used/vardaan_campus.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -373,26 +411,26 @@
     line-height: 1.2em;
 }
 .list_upper_sec{
-    background-image: url('../../public/images/used/list_bg.JPG');
+    background-image: url('https://images.vardaanschool.org/used/list_bg.JPG');
     background-position: top center;
     background-repeat: no-repeat;    
     background-size: contain;
 }
 .list_upper_body{
     padding: 236px;
-    background-image: url('https://presidencyschools.org/wp-content/uploads/2022/11/Pan-Bangalore-Presence-top-mask-V2.svg');
+    background-image: url('https://images.vardaanschool.org/used/list-mask.svg');
     background-position: top center;
     background-repeat: no-repeat;
     opacity: 1;
 }
 .list_lower_body{
-    background-image: url('https://presidencyschools.org/wp-content/uploads/2022/11/pattern-001.jpg');
+    background-image: url('https://images.vardaanschool.org/used/pattern-001.jpg');
     background-position: bottom center;
     background-repeat: no-repeat;
     padding-bottom: 200px;
 }
 .list_bottom_sec{
-    background-image: url('https://presidencyschools.org/wp-content/uploads/2022/11/Pan-Bangalore-Presence-02.png');
+    background-image: url('https://images.vardaanschool.org/used/presence-02.png');
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -492,10 +530,30 @@
 .testimonial_img_mob{
     display: none;
 }
+.vardaan_news_sec{
+    margin-top: -140px;
+}
+.vardaan_news_heading{
+    padding: 10px 0px;
+    text-align: center;
+    margin: 0px;
+    color: #002880;
+    font-family: "Soleto";
+    font-size: 46px;
+    font-weight: 900;
+}
+.news_img_l{
+    padding: 40px 80px;
+    width: 100%;
+}
+.news_img_p{
+    padding: 40px 80px;
+    display: none;
+}
 .pedagogy_sec{
     padding: 150px 80px 100px;
     margin-top: -140px;
-    background-image: url('../../public/images/used/pedagogy_bg.JPG');
+    background-image: url('https://images.vardaanschool.org/used/pedagogy_bg.JPG');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -523,6 +581,8 @@
 }
 .pedagogy_img{
     width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
     border-radius: 10px 10px 0px 0px;
 }
 .pedagogy_card_body{
@@ -546,11 +606,8 @@
     line-height: 1.5em;
     text-align: justify;
 }
-.news_img{
-    width: 20%;
-}
 .footer_sec{
-    background-image: url('../../public/images/used/bus_pic.JPG');
+    background-image: url('https://images.vardaanschool.org/used/bus_pic.JPG');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -621,6 +678,7 @@
 }
 .subpages_heading1{
     font-size: 36px;
+    padding-top: 90px;
 }
 .sub_heading_img{
     width: 100%;
@@ -780,6 +838,21 @@
     max-width: 100%;
     max-height: 510px;
 }
+.st_life_card{
+    width: 20%;
+    background-color: #F6AD1B;
+    transition: background-color 0.3s ease-in-out;
+}
+.st_life_card:hover{
+    background-color: #156CB3;
+}
+.st_life_footer{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 50px 20px 30px;
+}
 @media screen and (max-width: 1500px) {
     .about_school{
         width: 70%;
@@ -904,7 +977,11 @@
     .list_cards{
         padding: 60px 0px 0px;
     }
+    .vardaan_news_sec{
+        margin-top: -70px;
+    }
     .pedagogy_sec {
+        margin-top: 0px;
         padding: 35px 80px 48px;
     }
     .pedagogy_cards {
@@ -967,6 +1044,9 @@
     }
     .about_overlay{
         padding: 0px 40px;
+    }
+    .slide-image {
+        border-radius: 0px;
     }
     .abt_img_box{
         display: none;
@@ -1085,7 +1165,17 @@
         width: 50%;
         border-radius: 10px 0px 0px 10px;
     }
+    .vardaan_news_sec{
+        margin-top: -20px;
+    }
+    .vardaan_news_heading{
+        font-size: 28px;
+    }
+    .news_img_l{
+        padding: 40px 40px;
+    }
     .pedagogy_sec {
+        margin-top: -100px;
         padding: 150px 40px 100px;
     }
     .pedagogy_heading{
@@ -1161,7 +1251,7 @@
         aspect-ratio: 1/0.8;
     }
     .about_sec{
-        background-image: url("../../public/images/used/abouts_base.png");
+        background-image: url("https://images.vardaanschool.org/used/abouts_base.png");
     }
     .about_overlay{
         padding: 0px 28px;
@@ -1210,7 +1300,7 @@
     }
     .facilities_sec{
         /* padding: 416px 0px; */
-        background-image: url("../../public/images/used/vardaan_campus.png");
+        background-image: url("https://images.vardaanschool.org/used/vardaan_campus.png");
     }
     .facilities_bottom_box{
         margin-top: -40px;
@@ -1259,6 +1349,14 @@
         display: none;
     }
     .testimonial_img_mob{
+        display: block;
+    }
+    .news_img_l{
+        display: none;
+    }
+    .news_img_p{
+        width: 100%;
+        padding: 40px 12px;
         display: block;
     }
     .pedagogy_sec {
@@ -1587,4 +1685,21 @@
 .ft_yt_btn{
     width: 40px;
     cursor: pointer;
+}
+.cmng_sn{
+    text-align: center;
+    font-size: 100px;
+    font-weight: 800;
+    color: #25D366;
+    padding: 40px;
+}
+.notification_bar{
+    position: sticky;
+    bottom: 0px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #FFFFFF;
+    color: #ff000c;
+    padding: 4px 12px;
+    z-index: 9;
 }

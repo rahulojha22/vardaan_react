@@ -17,10 +17,13 @@ const Footer = () => {
 
   return (
     <>
+      <div className='notification_bar'>
+        <marquee>School & Hostel admissionsn for academic session 2025-26 are open now with limited seats!!!</marquee>
+      </div>
       <div className='footer_sec'>
         <div className='footer_box'>
           <div className='footer_left'>
-            <img src='/images/used/vardaan_logo1.PNG' alt='logo' className='vardaan_f_logo' />
+            <img src='https://images.vardaanschool.org/used/vardaan_logo1.png' alt='logo' className='vardaan_f_logo' loading='lazy' />
             <div>
               <div className='footer_item'>
                 <p className='item_name'>Address</p>
@@ -51,20 +54,20 @@ const Footer = () => {
             <div className='social_sec'>
                 Follow us on Social:
                 <div className='social_icons'>
-                  <div className='ft_wtsap_btn' onClick={()=>handleClick("")}>
-                    <img src='/images/icons/whatsapp.png' className='yt_icon' alt='whatsapp' />
+                  <div className='ft_wtsap_btn' onClick={()=>handleClick("https://wa.me/919799145119")}>
+                    <img src='https://images.vardaanschool.org/icons/whatsapp.png' className='yt_icon' alt='whatsapp' loading='lazy' />
                     <span className='icon_text'>Whatsapp</span>
                   </div>
-                  <div className='ft_fb_btn' onClick={()=>handleClick("")}>
-                    <img src='/images/icons/facebook.png' className='yt_icon' alt='facebook' />
+                  <div className='ft_fb_btn' onClick={()=>handleClick("https://www.facebook.com/share/15ABdtTfRR/")}>
+                    <img src='https://images.vardaanschool.org/icons/facebook.png' className='yt_icon' alt='facebook' loading='lazy' />
                     <span className='icon_text'>Facebook</span>
                   </div>
                   <div className='ft_insta_btn' onClick={()=>handleClick("https://www.instagram.com/vardaan_group_of_schools?utm_source=qr")}>
-                    <img src='/images/icons/instagram.png' className='yt_icon' alt='instagram' />
+                    <img src='https://images.vardaanschool.org/icons/instagram.png' className='yt_icon' alt='instagram' loading='lazy' />
                     <span className='icon_text'>Instagram</span>
                   </div>
                   <div className='ft_yt_btn' onClick={()=>handleClick("https://www.youtube.com/@vardaanschooldungarpur4830")}>
-                    <img src='/images/icons/youtube.png' className='yt_icon' alt='youtube' />
+                    <img src='https://images.vardaanschool.org/icons/youtube.png' className='yt_icon' alt='youtube' loading='lazy' />
                     <span className='icon_text'>Youtube</span>
                   </div>
                 </div>

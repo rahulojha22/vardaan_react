@@ -16,8 +16,8 @@ const About = () => {
   return (
     <div>
       <div className='subpages_heading1'>
-        <img className='sub_heading_img' src='/images/used/about_us_heading.png' alt='about' />
-        <img className='sub_heading_img_mob' src='/images/used/about_us_heading_mob.png' alt='about' />
+        <img className='sub_heading_img' src='https://images.vardaanschool.org/used/about_us_heading.jpg' alt='about' loading='lazy' />
+        <img className='sub_heading_img_mob' src='https://images.vardaanschool.org/used/about_us_heading_mob.jpg' alt='about' loading='lazy' />
       </div>
       <div className='subpages_body'>
         <p><b>The Vardaan - Mahaveer Group of Schools</b> spans Dungarpur, Udaipur, Rishabhdeo, and Chawand, and operates under the prestigious Bhagwan Mahaveer Shiksha & Vikas Samiti, established on <b>16th April 2000</b>. Over the past two decades, we have become a beacon of academic excellence and moral education, earning a reputation as one of Southern Rajasthan's leading K-12 institutions.</p>
@@ -38,7 +38,7 @@ const About = () => {
           if(i%2===0){
             return <div key={`mgt_card${i}`} className='mgt_item1'>
                       <div className='mgt_img_box'>
-                        <img src={`/images/used/${val.image}`} alt='mgt_image' className='mgt_img' />
+                        <img src={`https://images.vardaanschool.org/used/${val.image}`} alt='mgt_image' className='mgt_img' loading='lazy' />
                       </div>
                       <div className='mgt_box'>
                         <p className='mgt_heading'>{val.name} - {val.designation}</p>
@@ -52,7 +52,7 @@ const About = () => {
                       <p className='mgt_desc'>{val.description}</p>
                     </div>
                     <div className='mgt_img_box'>
-                      <img src={`/images/used/${val.image}`} alt='mgt_image' className='mgt_img' />
+                      <img src={`https://images.vardaanschool.org/used/${val.image}`} alt='mgt_image' className='mgt_img' loading='lazy' />
                     </div>
                 </div>
           }

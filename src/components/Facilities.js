@@ -5,13 +5,13 @@ const Facilities = () => {
   
     useEffect(() => {
       const facilitiesList = [
-        {name: 'Library', image: 'library.jpg'},
-        {name: 'Smart Classrooms', image: 'smart_class.jpg'},
-        {name: 'Sports Facilities', image: 'sports_facilities.jpg'},
-        {name: 'Computer Lab', image: 'computer_lab.jpg'},
-        {name: 'GPS enabled Transport', image: 'gps.png'},
-        {name: 'CCTV Surveillance', image: 'cctv.jpg'},
-        {name: 'State-of-the-art Laboratories', image: 'labs.JPG'}
+        {name: 'Library', image: 'library.webp'},
+        {name: 'Smart Classrooms', image: 'smart_class.webp'},
+        {name: 'Sports Facilities', image: 'sports_facilities.webp'},
+        {name: 'Computer Lab', image: 'computer_lab.webp'},
+        {name: 'GPS enabled Transport', image: 'gps.webp'},
+        {name: 'CCTV Surveillance', image: 'cctv.webp'},
+        {name: 'State-of-the-art Laboratories', image: 'labs.webp'}
       ]
       setFacilities(facilitiesList);    
     }, []);
@@ -31,7 +31,7 @@ const Facilities = () => {
                 {facilities && facilities.map((val, i)=>{
                   return <div key={`facilities_card${i}`} className='facilities_card_box'>
                     <div className='facilities_img'>
-                      <img src={`/images/used/${val.image}`} className='facility_img' alt='facility' />
+                      <img src={`https://images.vardaanschool.org/used/${val.image}`} className='facility_img' alt='facility' loading='lazy' />
                     </div>
                     <span className='facilities_name'>{val.name}</span>
                   </div>

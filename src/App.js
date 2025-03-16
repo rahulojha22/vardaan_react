@@ -8,9 +8,10 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Management from './pages/Management';
 import Events from './pages/Events';
-import Results from './pages/Results';
+// import Results from './pages/Results';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Studentlife from './pages/Studentlife';
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
                 <Route exact path="/about-us" element={<About/>} />
                 <Route exact path="/management" element={<Management/>} />
                 <Route exact path="/events" element={<Events/>} />
-                <Route exact path="/results" element={<Results/>} />
+                {/* <Route exact path="/results" element={<Results/>} /> */}
+                <Route exact path="/life" element={<Studentlife/>} />
             </Routes>
             <Footer />
         </Router>

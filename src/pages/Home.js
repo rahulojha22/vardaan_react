@@ -1,16 +1,28 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense, lazy } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 
-import About from '../components/About';
-import Awards from '../components/Awards';
-import Facilities from '../components/Facilities';
-import Info from '../components/Info';
-import List from '../components/List';
-import Pedagogy from '../components/Pedagogy';
-import Poster from '../components/Poster';
-import Testimonials from '../components/Testimonials';
+// import About from '../components/About';
+// import Awards from '../components/Awards';
+// import Facilities from '../components/Facilities';
+// import Info from '../components/Info';
+// import List from '../components/List';
+// import Pedagogy from '../components/Pedagogy';
+// import Poster from '../components/Poster';
+// import Testimonials from '../components/Testimonials';
+// import VardaanNews from '../components/VardaanNews';
+
+// Lazy-loaded components
+const Poster = lazy(() => import('../components/Poster'));
+const About = lazy(() => import('../components/About'));
+const Info = lazy(() => import('../components/Info'));
+const Awards = lazy(() => import('../components/Awards'));
+const Facilities = lazy(() => import('../components/Facilities'));
+const List = lazy(() => import('../components/List'));
+const VardaanNews = lazy(() => import('../components/VardaanNews'));
+const Pedagogy = lazy(() => import('../components/Pedagogy'));
+const Testimonials = lazy(() => import('../components/Testimonials'));
 
 const Home = () => {
   const [show, setShow] = useState(false);
@@ -88,33 +100,46 @@ const Home = () => {
           </Modal.Footer>
         </Modal>
         
-        <Poster />
+        {/* <Poster />
         <About />
         <Info />
         <Awards />
         <Facilities />
         <List />        
+        <VardaanNews />
         <Pedagogy />
-        <Testimonials />
+        <Testimonials /> */}
+
+        <Suspense fallback={<div>Loading...</div>}>
+          <Poster />
+          <About />
+          <Info />
+          <Awards />
+          <Facilities />
+          <List />
+          <VardaanNews />
+          <Pedagogy />
+          <Testimonials />
+        </Suspense>
 
         <div className='buttons'>
           <Button as="a" variant="primary" className='admission_btn' onClick={handleShow}>
             Admission Open
           </Button>
           <div className='wtsap_btn' onClick={()=>handleClick("https://wa.me/919799145119")}>
-            <img src='/images/icons/whatsapp.png' className='yt_icon' alt='whatsapp' />
+            <img src='https://images.vardaanschool.org/icons/whatsapp.png' className='yt_icon' alt='whatsapp' loading='lazy' />
             <span className='icon_text'>Whatsapp</span>
           </div>
           <div className='fb_btn' onClick={()=>handleClick("https://www.facebook.com/share/15ABdtTfRR/")}>
-            <img src='/images/icons/facebook.png' className='yt_icon' alt='facebook' />
+            <img src='https://images.vardaanschool.org/icons/facebook.png' className='yt_icon' alt='facebook' loading='lazy' />
             <span className='icon_text'>Facebook</span>
           </div>
           <div className='insta_btn' onClick={()=>handleClick('https://www.instagram.com/vardaan_group_of_schools?utm_source=qr')}>
-            <img src='/images/icons/instagram.png' className='yt_icon' alt='instagram' />
+            <img src='https://images.vardaanschool.org/icons/instagram.png' className='yt_icon' alt='instagram' loading='lazy' />
             <span className='icon_text'>Instagram</span>
           </div>
           <div className='yt_btn' onClick={()=>handleClick('https://www.youtube.com/@vardaanschooldungarpur4830')}>
-            <img src='/images/icons/youtube.png' className='yt_icon' alt='youtube' />
+            <img src='https://images.vardaanschool.org/icons/youtube.png' className='yt_icon' alt='youtube' loading='lazy' />
             <span className='icon_text'>Youtube</span>
           </div>
         </div>

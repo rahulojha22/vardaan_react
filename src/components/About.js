@@ -1,7 +1,51 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from "react-router-dom";
 
 const About = () => {
+  const src = "https://images.vardaanschool.org/about"; 
+  const images = [
+    "/about1.JPG",
+    "/about2.JPG",
+    "/about3.jpg",
+    "/about4.jpg",
+    "/about5.jpg",
+    "/about6.png",
+    "/about7.jpg",
+    "/about8.jpg",
+    "/about9.jpg",
+    "/about10.jpg",
+    "/about11.JPG",
+    "/about12.jpg",
+    "/about13.jpg",
+    "/about14.JPG",
+    "/about15.jpg",
+    "/about16.JPG",
+    "/about17.jpg",
+    "/about18.JPG",
+    "/about19.JPG",
+    "/about20.JPG",
+    "/about21.JPG",
+    "/about22.jpg",
+    "/about23.jpg",
+    "/about24.jpg",
+    "/about25.jpeg",
+    "/about26.jpeg",
+    "/about27.jpeg",
+    "/about28.jpeg",
+    "/about29.jpg",
+    "/about30.jpeg"
+  ];
+
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 4000); // Change image every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup function
+  }, [images.length]);
+
   return (
     <>
       <div className='about_sec'>
@@ -17,13 +61,39 @@ const About = () => {
             <Link className='about_link' to="/about-us">Read More</Link>
           </div>
           <div className='abt_img_box'>
-            <img className='about_img' src='/images/used/about.JPG' alt='about' />
+            {/* <img key={index} src={src+images[index]} alt="about" className="slide-image" loading='lazy' /> */}
+              <div className="slider-container">
+                <div className="slide-wrapper">
+                  {images.map((img, i) => (
+                    <img
+                      key={i}
+                      src={`${src}${img}`}
+                      alt="about"
+                      className={`slide-image ${i === index ? "active" : ""}`}
+                      loading="lazy"
+                    />
+                  ))}
+                </div>
+              </div>
           </div>
         </div>        
       </div>
       <div className='abt_img_box1'>
-          <img className='about_img' src='/images/used/about.JPG' alt='about' />
-          {/* <img className='about_img' src='/images/used/about1.JPEG' alt='about' /> */}
+          {/* <img className='about_img' src='https://images.vardaanschool.org/used/about.jpg' alt='about' /> */}
+          {/* <img key={index} src={src+images[index]} alt="about" className="slide-image" loading='lazy' /> */}
+          <div className="slider-container">
+            <div className="slide-wrapper">
+              {images.map((img, i) => (
+                <img
+                  key={i}
+                  src={`${src}${img}`}
+                  alt="about"
+                  className={`slide-image ${i === index ? "active" : ""}`}
+                  loading="lazy"
+                />
+              ))}
+            </div>
+          </div>
       </div>
     </>
   )

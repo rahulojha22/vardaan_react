@@ -29,7 +29,7 @@ const Info = () => {
                     </div>                  
                   </div>
                   <div className='info_logo_box'>
-                    <img src={`/images/icons/${val.icon}`} className='info_logo' alt='info' />
+                    <img src={`https://images.vardaanschool.org/icons/${val.icon}`} className='info_logo' alt='info' loading='lazy' />
                   </div>
                 </div>
         })}      
